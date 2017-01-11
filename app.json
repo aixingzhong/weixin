@@ -1,8 +1,14 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index"  //pages	Array	是	设置页面路径
   ],
-  "window": {
+  "window": {                                               
+/*属性	类型	默认值	描述
+navigationBarBackgroundColor	HexColor	#000000	导航栏背景颜色，如"#000000"
+navigationBarTextStyle	String	white	导航栏标题颜色，仅支持 black/white
+navigationBarTitleText	String	 	导航栏标题文字内容
+backgroundColor	HexColor	#ffffff	窗口的背景色
+backgroundTextStyle	String	dark	下拉背景字体、loading 图的样式，仅支持 dark/light*/
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#333",
     "navigationBarTitleText": "美团外卖",
@@ -10,6 +16,13 @@
     "backgroundTextStyle": "light"
   },
   "tabBar": {
+    
+/*属性	类型	必填	默认值	描述
+color	HexColor	是	 	tab 上的文字默认颜色
+selectedColor	HexColor	是	 	tab 上的文字选中时的颜色
+backgroundColor	HexColor	是	 	tab 的背景色
+borderStyle	String	否	black	tabbar上边框的颜色， 仅支持 black/white
+list	Array	是	 	tab 的列表，详见 list 属性说明，最少2个、最多5个 tab*/
     "color":"#e3e3e3",
     "selectedColor":"black",
     "backgroundColor":"#f3f3f3",
@@ -30,6 +43,12 @@
     ]
   },
   "networkTimeout": {
+    
+/*属性	类型	必填	说明
+request	Number	否	wx.request的超时时间，单位毫秒
+connectSocket	Number	否	wx.connectSocket的超时时间，单位毫秒
+uploadFile	Number	否	wx.uploadFile的超时时间，单位毫秒
+downloadFile	Number	否	wx.downloadFile的超时时间，单位毫秒*/
     "request": 10000,
     "downloadFile": 10000
   },
